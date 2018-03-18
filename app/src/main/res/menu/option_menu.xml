@@ -2,4 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item  android:title="add article"
         android:id="@+id/article" />
+    <item  android:title="upload image"
+        android:id="@+id/uploadImage" />
 </menu>

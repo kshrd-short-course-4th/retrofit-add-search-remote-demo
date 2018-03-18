@@ -2,6 +2,7 @@ package com.example.rathana.retrofitdemo.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,15 +36,23 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
         this.articles=articles; this.context=context;
         this.callback= (ArticleCallback) context;
     }
+
+    public void add(List<Article> articles){
+        int previousSize=this.articles.size();
+        this.articles.addAll(articles);
+        notifyItemRangeInserted(previousSize,this.articles.size());
+    }
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view= LayoutInflater.from(context).inflate(R.layout.article_item_layout,parent,false);
         return new ViewHolder(view);
     }
 
+    private static final String TAG = "ArticleAdapter";
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Article article=articles.get(position);
+        Log.e(TAG, "onBindViewHolder: "+articles.size());
         holder.title.setText(article.getTitle());
 
     }
@@ -75,7 +84,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
                                     callback.getAdapterPositionWhenRemove(getAdapterPosition());
                                     return true;
                                 case R.id.update:
-                                    //callback.getAdapterPosition(getAdapterPosition());
+                                    callback.getAdapterPositionWhenUpdate(getAdapterPosition());
                                     return true;
                             }
                             return false;
@@ -91,6 +100,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
     public interface ArticleCallback{
         void optionClick(int position);
         void getAdapterPositionWhenRemove(int position);
+        void getAdapterPositionWhenUpdate(int position);
 
     }
 }

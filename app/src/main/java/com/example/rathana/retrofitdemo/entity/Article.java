@@ -1,8 +1,11 @@
 package com.example.rathana.retrofitdemo.entity;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Article {
+public class Article{
     @SerializedName("IMAGE")
     private String image;
     @SerializedName("CATEGORY")
@@ -19,6 +22,10 @@ public class Article {
     private String title;
     @SerializedName("ID")
     private int id;
+
+
+
+
 
     public String getImage() {
         return image;
@@ -97,4 +104,5 @@ public class Article {
                 ", id=" + id +
                 '}';
     }
+
 }

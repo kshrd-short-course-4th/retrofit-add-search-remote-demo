@@ -1,8 +1,11 @@
 package com.example.rathana.retrofitdemo.entity;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Author {
+public class Author{
     @SerializedName("IMAGE_URL")
     private String imageUrl;
     @SerializedName("FACEBOOK_ID")

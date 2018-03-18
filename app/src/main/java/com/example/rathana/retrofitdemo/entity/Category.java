@@ -1,5 +1,8 @@
 package com.example.rathana.retrofitdemo.entity;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.SerializedName;
 
 public class Category {
@@ -7,6 +10,7 @@ public class Category {
     private String name;
     @SerializedName("ID")
     private int id;
+
 
     public String getName() {
         return name;

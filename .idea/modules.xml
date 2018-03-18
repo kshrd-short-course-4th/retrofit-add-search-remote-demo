@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://C:\Users\chhean.daravuth\Desktop\retrofit\retrofit-demo-master\RetrofitDemo.iml" filepath="C:\Users\chhean.daravuth\Desktop\retrofit\retrofit-demo-master\RetrofitDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RetrofitServerCommunication.iml" filepath="$PROJECT_DIR$/RetrofitServerCommunication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\chhean.daravuth\Desktop\retrofit\retrofit-demo-master\app\app.iml" filepath="C:\Users\chhean.daravuth\Desktop\retrofit\retrofit-demo-master\app\app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/retrofit-demo-master.iml" filepath="$PROJECT_DIR$/retrofit-demo-master.iml" />
+      <module fileurl="file://C:\Users\RATHANA\Documents\android app\RetrofitServerCommunication\app\app.iml" filepath="C:\Users\RATHANA\Documents\android app\RetrofitServerCommunication\app\app.iml" />
+      <module fileurl="file://C:\Users\RATHANA\Documents\android app\RetrofitServerCommunication\retrofit-demo-master.iml" filepath="C:\Users\RATHANA\Documents\android app\RetrofitServerCommunication\retrofit-demo-master.iml" />
     </modules>
   </component>
 </project>
